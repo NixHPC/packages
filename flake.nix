@@ -10,6 +10,6 @@
    flake-utils.lib.eachDefaultSystem (system:
       let pkgs = nixpkgs.legacyPackages.${system}; in
     {
-      packages = import ./packages { inherit pkgs; }; 
+      packages = import ./packages.nix { inherit pkgs; }; 
     });
 }
