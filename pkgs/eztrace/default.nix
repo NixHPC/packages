@@ -41,5 +41,6 @@ stdenv.mkDerivation rec {
     description = "EZTrace is a tool that automatically generates execution traces from HPC programs.";
     homepage = "https://gitlab.com/eztrace/eztrace";
     license = lib.licenses.cecill-b;
+    platforms = lib.platforms.linux;
   };
 }
